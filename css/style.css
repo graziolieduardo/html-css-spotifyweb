@@ -6,6 +6,10 @@
 
 /* common  */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -32,6 +36,18 @@
     height: 100%;
 }
 
+li {
+    list-style: none;
+}
+
+#white {
+    color: white;
+}
+
+#gray {
+    color: #808080;
+}
+
 /* Main  */
 main {
     height: 90vh;
@@ -40,18 +56,129 @@ main {
 main nav {
     float: left;
     width: 12%;
+    background-color: #000000;
+    color: #808080;
 }
 
 main .content {
     float: left;
     width: 88%;
+    background-color: #141922;
 }
 
 /* Nav  */
 
-nav #logo img {
-    width: 75%;
+/* nav-top  */
+
+main #logo,
+main .nav-playlist {
     padding: 15px;
+}
+
+nav #logo img {
+    width: 120px;
+    height: 100%;
+}
+
+nav .nav-main li {
+    padding-left: 12px;
+}
+
+nav .nav-top .nav-main li a,
+nav .nav-top .nav-playlist li a {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: #808080;
+    line-height: 30px;
+}
+
+nav .nav-top .nav-main li a:hover,
+nav .nav-top .nav-main li a:hover img,
+nav .nav-top .nav-playlist li a:hover {
+    color: white;
+    filter: none;
+}
+
+nav .nav-top .nav-playlist li a:hover #add-playlist {
+    background-color: white;
+}
+
+nav .nav-top .nav-main li img {
+    width: 23px;
+    margin-right: 5px;
+    filter: invert(0.3)
+}
+
+nav .nav-top .nav-main li:first-child {
+    border-left: 3px solid #ADFF2F;
+}
+
+nav .nav-main li:nth-child(2),
+nav .nav-main li:nth-child(3) {
+    border: 3px solid black;
+}
+
+nav .nav-top .nav-playlist ul li:first-child {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+nav .nav-top .nav-playlist #add-playlist {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #999999;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 10px 15px 0;
+}
+
+/* nav-bottom  */
+
+nav .nav-bottom {
+    padding: 10px 15px
+}
+
+nav .nav-bottom .install-app {
+    align-items: center;
+    font-size: 12px;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 10px;
+}
+
+nav .nav-bottom .install-app img {
+    width: 14px;
+    margin-right: 5px;
+    filter: invert(0.3);
+}
+
+nav .nav-bottom .user-profile {
+    align-items: center;
+    padding-top: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+nav .nav-bottom .user-profile img {
+    width: 20px;
+    height: 20px;
+    background-color: #808080;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+nav .nav-bottom .install-app:hover,
+nav .nav-bottom .install-app:hover img {
+    color: white;
+    filter: none;
 }
 
 /* Footer  */
@@ -59,22 +186,9 @@ nav #logo img {
 footer {
     width: 100%;
     height: 10vh;
+    background-color: #282828;
 }
 
-
-/* debug body */
-
-.debug main nav {
-    background-color: blue;
-}
-
-.debug main .content {
-    background-color: red;
-}
-
-.debug footer {
-    background-color: yellow;
-}
 
 /* debug nav  */
 
