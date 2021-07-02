@@ -17,6 +17,8 @@
         <!-- inizio main  -->
         <main>
             <nav class="h-100">
+
+                <!-- inizio nav top  -->
                 <div class="nav-top flex f-column">
                     <div id="logo">
                         <img src="img/logo.svg" alt="Spotify Logo">
@@ -25,6 +27,8 @@
                     <div id="logo-mobile">
                         <img src="img/logo-small.svg" alt="Logo Mobile">
                     </div>
+
+                    <!-- inizio nav main  -->
                     <div class="nav-main">
                         <ul>
                             <li>
@@ -47,6 +51,8 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- inizio nav playlist  -->
                     <div class="nav-playlist">
                         <h3>Playlist</h3>
                         <a href="#">
@@ -80,6 +86,7 @@
                     </div>
                 </div>
 
+                <!-- inizio nav bottom  -->
                 <div class="nav-bottom">
                     <div class="nav-user">
                         <div class="install-app flex align-center">
@@ -101,7 +108,7 @@
                 </div>
                 <div class="wrapper">
                     <div class="nav-content">
-                        <ul class="nav-content-list flex center">
+                        <ul class="nav-content-list flex center f-wrap padding-b30">
                             <li>In evidenza</li>
                             <li>Podcast</li>
                             <li>Classifiche</li>
@@ -111,16 +118,17 @@
                         </ul>
                     </div>
 
-                    <div class="albums1">
-                        <h2>Recently played</h2>
+                    <!-- Albums 1 section  -->
+                    <div class="albums">
+                        <h2 class="padding-b30">Recently played</h2>
 
-                        <ul class="albums1-list flex between">
+                        <ul class="albums-list flex f-wrap padding-b30">
                             <li>
                                 <div class="album-img">
                                     <div class="layover">
                                         <i class="far fa-play-circle"></i>
                                     </div>
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/metal_lifting.jpg" alt="Heavy Metal">
                                 </div>
                                 <h4>Heavy Metal</h4>
                                 <span>subtitle</span>
@@ -130,9 +138,19 @@
                                     <div class="layover">
                                         <i class="far fa-play-circle"></i>
                                     </div>
-                                    <img src="img/stranger.jpeg" alt="">
+                                    <img src="img/stranger.jpeg" alt="Stranger Things">
                                 </div>
-                                <h4>Heavy Metal</h4>
+                                <h4>Stranger Things</h4>
+                                <span>Kyle Dixon & Michael Stein</span>
+                            </li>
+                            <li>
+                                <div class="album-img">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/aquietplace.jpeg" alt="A Quiet Place">
+                                </div>
+                                <h4>A quiet place</h4>
                                 <span>subtitle</span>
                             </li>
                             <li>
@@ -140,9 +158,9 @@
                                     <div class="layover">
                                         <i class="far fa-play-circle"></i>
                                     </div>
-                                    <img src="img/aquietplace.jpeg" alt="">
+                                    <img src="img/split.jpeg" alt="Split">
                                 </div>
-                                <h4>Heavy Metal</h4>
+                                <h4>Split</h4>
                                 <span>subtitle</span>
                             </li>
                             <li>
@@ -150,9 +168,9 @@
                                     <div class="layover">
                                         <i class="far fa-play-circle"></i>
                                     </div>
-                                    <img src="img/split.jpeg" alt="">
+                                    <img src="img/cure.jpeg" alt="Cure">
                                 </div>
-                                <h4>Heavy Metal</h4>
+                                <h4>A cure for wellness</h4>
                                 <span>subtitle</span>
                             </li>
                             <li>
@@ -160,20 +178,62 @@
                                     <div class="layover">
                                         <i class="far fa-play-circle"></i>
                                     </div>
-                                    <img src="img/cure.jpeg" alt="">
+                                    <img src="img/sinister.jpeg" alt="Sinister">
                                 </div>
-                                <h4>Heavy Metal</h4>
+                                <h4>Sinister</h4>
                                 <span>subtitle</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Albums 2 section  -->
+                    <div class="albums">
+                        <h2>Creato per John Doe</h2>
+                        <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                        <ul class="albums-list flex f-wrap padding-t30">
+                            <li>
+                                <div class="album-img">
+                                    <div class="layover">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                    <img src="img/radar.jpeg" alt="Radar">
+                                </div>
+                                <h4>Release Radar</h4>
                             </li>
                             <li>
                                 <div class="album-img">
                                     <div class="layover">
                                         <i class="far fa-play-circle"></i>
                                     </div>
-                                    <img src="img/sinister.jpeg" alt="">
+                                    <img src="img/mixdaily.jpeg" alt="Daily Mix">
                                 </div>
-                                <h4>Heavy Metal</h4>
-                                <span>subtitle</span>
+                                <h4>Daily mix 1</h4>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Albums 3 section  -->
+                    <div class="albums">
+                        <h2>Artisti più popolari</h2>
+                        <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                        <ul class="albums-list flex f-wrap padding-t30">
+                            <li>
+                                <div class="album-img">
+                                    <div class="layover circle-img">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                    <img class="circle-img" src="img/youg.jpeg" alt="Lana del Rey">
+                                </div>
+                                <h4>Lana del Rey</h4>
+                            </li>
+                            <li class="circle-img">
+                                <div class="album-img">
+                                    <div class="layover circle-img">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                    <img class="circle-img" src="img/einaudi.jpeg" alt="Einaudi">
+                                </div>
+                                <h4>Ludovico Einaudi</h4>
                             </li>
                         </ul>
                     </div>
@@ -184,6 +244,8 @@
         <!-- Inizio Footer  -->
         <footer>
             <div class="player flex between align-center">
+
+                <!-- inizio player left -->
                 <div class="p-left flex align-center around">
                     <div class="item flex align-center">
                         <img src="img/sinister.jpeg" alt="">
@@ -197,6 +259,8 @@
                         <i class="far fa-folder"></i>
                     </div>
                 </div>
+
+                <!-- inizio player center  -->
                 <div class="p-center">
                     <div class="row-top flex center align-center">
                         <a href="#">
@@ -224,6 +288,8 @@
                         <span class="time">4:35</span>
                     </div>
                 </div>
+
+                <!-- inizio player right  -->
                 <div class="p-right flex align-center around">
                     <i class="fas fa-list-ul"></i>
                     <i class="fas fa-desktop"></i>
