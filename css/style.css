@@ -213,8 +213,12 @@ nav .nav-bottom .install-app:hover img {
 /* Main content  */
 
 main .content .wrapper {
-    padding-top: 100px;
+    padding: 100px 20px 20px;
+    color: white;
 }
+
+
+/* upgrade section  */
 
 main .content .upgrade {
     position: fixed;
@@ -237,17 +241,70 @@ main .content .upgrade #upgrade-btn{
     margin-right: 20px;
 }
 
-main .content .wrapper .nav-content ul li {
+/* Albums 1 section  */
+
+main .content .wrapper .albums1 > h2 {
+    padding: 30px 0;
+    font-size: 20px;
+} 
+
+main .content .wrapper h4 {
+    padding: 10px 0;
+    font-size: 15px;
+} 
+
+main .content .wrapper span {
+    font-size: 12px;
+    color: #808080;
+} 
+
+main .content .wrapper .nav-content .nav-content-list li {
     text-transform: uppercase;
     color: #808080;
     font-size: 12px;
     padding: 0 10px;
 }
 
-main .content .wrapper .nav-content ul li:hover {
+main .content .wrapper .nav-content .nav-content-list li:hover {
     color: white;
 }
 
+.content .wrapper .albums1 .albums1-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: calc((100% / 6) - 10px);
+    cursor: pointer;
+}
+
+.content .wrapper .albums1 .albums1-list li img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .wrapper .albums1 .albums1-list li .album-img {
+    position: relative;
+}
+
+.content .wrapper .albums1 .albums1-list li .layover {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content .wrapper .albums1 .albums1-list li .layover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.content .wrapper .albums1 .albums1-list li:hover .layover {
+    display: block;
+}
 /* Footer  */
 
 footer {
