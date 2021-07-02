@@ -8,16 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>My spotify</title>
 </head>
 <body class="">
     <div class="corpo">
         <!-- inizio main  -->
         <main>
-            <nav class="flex f-column between h-100">
-                <div class="nav-top">
+            <nav class="h-100">
+                <div class="nav-top flex f-column">
                     <div id="logo">
                         <img src="img/logo.svg" alt="Spotify Logo">
+                    </div>
+
+                    <div id="logo-mobile">
+                        <img src="img/logo-small.svg" alt="Logo Mobile">
                     </div>
                     <div class="nav-main">
                         <ul>
@@ -42,14 +47,12 @@
                         </ul>
                     </div>
                     <div class="nav-playlist">
-                        <ul>
-                            <li>Playlist</li>
-                            <li>
-                                <a href="#">
-                                    <span id="add-playlist">+</span>
-                                    <span>Crea Playlist</span>
-                                </a>
-                            </li>
+                        <h3>Playlist</h3>
+                        <a href="#">
+                            <span id="add-playlist">+</span>
+                            <span>Crea Playlist</span>
+                        </a>
+                        <ul class="menu-list">
                             <li>
                                 <a href="#">Nome Playlist</a>
                             </li>
@@ -99,7 +102,17 @@
     
         <!-- Inizio Footer  -->
         <footer>
-            
+            <div class="player">
+                <div class="p-left">
+
+                </div>
+                <div class="p-center">
+
+                </div>
+                <div class="p-right">
+                    
+                </div>
+            </div>
         </footer>
     </div>
 </body>
