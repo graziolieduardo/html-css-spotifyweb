@@ -40,6 +40,10 @@ body {
     align-items: center;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
 .h-100 {
     height: 100%;
 }
@@ -213,6 +217,167 @@ footer {
     width: 100%;
     height: 90px;
     background-color: #282828;
+}
+
+footer .player {
+    width: 100%;
+    height: 100%;
+}
+
+footer .p-left{
+    width: 230px;
+    height: 100%;
+}
+
+footer .p-center {
+    width: 40%;
+    height: 100%;
+}
+
+footer .p-right{
+    width: 230px;
+    height: 100%;
+}
+
+
+/* player left  */
+
+.player .p-left {
+    color: #808080;
+    font-size: 14px;
+}
+
+footer .player .p-left .item img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.player .p-left .item i {
+    padding: 0 5px;
+}
+
+footer .player .p-left .item h5:hover,
+footer .player .p-left .item h6:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer .player .p-left .item i:hover {
+    color: white;
+}
+
+/* player center  */
+
+.player .p-center {
+    color: white;
+    font-size: 10px;
+}
+
+.row-top {
+    height: 60%;
+}
+
+.row-top i {
+    padding: 0 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.row-bottom {
+    width: 100%;
+}
+
+footer .player #player-btn {
+    font-size: 30px;
+}
+
+footer .player .p-center .row-bottom .bar {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer .player .p-center .row-bottom .bar .time-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #BABABA;
+}
+
+footer .player .p-center .row-top #player-btn:hover {
+    transform: scale(1.1);
+}
+
+.player .p-center .row-bottom .bar .bar-btn {
+    position: absolute;
+    top: -4px;
+    left: 18%;
+    display: none;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.player .p-center .row-bottom .bar:hover .bar-btn {
+    display: block;
+}
+
+.player .p-center .row-bottom .bar:hover .time-bar {
+    background-color: #ADFF2F;
+}
+
+/* player right  */
+
+.player .p-right {
+    color: white;
+    font-size: 14px;
+}
+
+footer .player .p-right .bar {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background-color: #535353;
+    border-radius: 10px;
+}
+
+footer .player .p-right .time-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    background-color: #BABABA;
+}
+
+.player .p-right .bar .bar-btn {
+    position: absolute;
+    top: -4px;
+    left: 18%;
+    display: none;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.player .p-right .bar:hover .bar-btn {
+    display: block;
+}
+
+.player .p-right .bar:hover .time-bar {
+    background-color: #ADFF2F;
 }
 
 
