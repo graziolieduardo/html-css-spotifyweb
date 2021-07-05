@@ -65,4 +65,14 @@
     }
 }
 
+@media screen and (max-height: 575px) {
+    main .content .upgrade {
+        display: none;
+    }
+
+    main .content .wrapper {
+        padding: 0 20px 20px;
+    }
+}
+
 
