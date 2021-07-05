@@ -98,7 +98,7 @@ main .content {
 
 /* nav-top  */
 main .nav-top {
-    height: calc(100% - 80px);
+    height: calc(100% - 90px);
     overflow: hidden;
     min-height: 370px;
 }
@@ -127,18 +127,23 @@ main nav .nav-top .nav-main ul li {
 }
 
 main nav .nav-top a {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     color: #808080;
     text-decoration: none;
     font-size: 12px;
-    line-height: 30px;
+    line-height: 35px;
+}
+
+nav .nav-top .nav-main span {
+    vertical-align: middle;
 }
 
 nav .nav-top .nav-main img {
-    width: 23px;
+    width: 25px;
     filter: invert(0.2);
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 nav .nav-top .nav-main ul li:first-child {
@@ -190,6 +195,12 @@ nav .nav-bottom .install-app {
     filter: invert(0.3);
 }
 
+nav .nav-bottom .install-app a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 20px;
+}
+
 nav .nav-bottom .install-app img {
     width: 15px;
     margin-right: 10px;
@@ -217,7 +228,7 @@ nav .nav-bottom .install-app:hover img {
 /* Main content  */
 
 main .content .wrapper {
-    padding: 100px 10px 20px;
+    padding: 100px 20px 20px;
     color: white;
 }
 
@@ -227,14 +238,14 @@ main .content .wrapper {
 main .content .upgrade {
     position: fixed;
     width: calc(100% - 230px);
-    height: 80px;
-    background-color: rgba(0, 0, 0, 0.5);
-    line-height: 80px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 90px;
     text-align: right;
 }
 
 main .content .upgrade #upgrade-btn{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     text-transform: uppercase;
     color: white;
     border: 1px solid white;
@@ -245,6 +256,10 @@ main .content .upgrade #upgrade-btn{
     margin-right: 20px;
 }
 
+main .content .upgrade #upgrade-btn:hover {
+    transform: scale(1.1);
+}
+
 /* Nav content section  */
 
 main .content .wrapper .nav-content .nav-content-list li {
@@ -252,16 +267,33 @@ main .content .wrapper .nav-content .nav-content-list li {
     color: #808080;
     font-size: 12px;
     padding: 10px;
+    cursor: pointer;
 }
 
 main .content .wrapper .nav-content .nav-content-list li:hover {
     color: white;
 }
 
+main .content .wrapper .nav-content .nav-content-list .hot{
+    position: relative;
+}
+
+main .content .wrapper .nav-content .nav-content-list .hot:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #ADFF2F;
+}
+
 /* Albums section  */
 
 main .content .wrapper .albums > h2 {
     font-size: 20px;
+    padding-bottom: 10px;
 } 
 
 main .content .wrapper h4 {
@@ -279,23 +311,22 @@ main .content .wrapper span {
 .content .wrapper .albums .albums-list li {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    width: calc(100% / 6);
+    width: calc((100% / 6) - 10px);
     cursor: pointer;
-    padding: 0 5px;
+    margin-right: 10px;
 }
 
 
 @media screen and (max-width: 1100px) {
     .content .wrapper .albums .albums-list li {
-        width: 25%;
+        width: calc((100% / 4) - 10px);
     }
 }
 
 @media screen and (max-width: 700px) {
     .content .wrapper .albums .albums-list li {
-        width: 50%;
+        width: calc((100% / 2) - 10px);
     }
 }
 
@@ -439,7 +470,7 @@ footer .player .p-center .row-top #player-btn:hover {
 .player .p-center .row-bottom .bar .bar-btn {
     position: absolute;
     top: -4px;
-    left: 18%;
+    left: 19%;
     display: none;
     background-color: white;
     width: 12px;

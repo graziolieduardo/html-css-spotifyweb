@@ -53,4 +53,14 @@
     main .content .upgrade {
         width: calc(100% - 50px);
     }
+
+    nav .nav-top .nav-main img,
+    nav .nav-bottom .user-profile img,
+    nav .nav-bottom .install-app img {
+        margin-right: 0px;
+    }
+
+    main nav .nav-bottom .install-app a {
+        justify-content: center;
+    }
 }
