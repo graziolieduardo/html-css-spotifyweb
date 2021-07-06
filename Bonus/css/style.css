@@ -91,7 +91,7 @@ main nav {
 
 main .content {
     float: left;
-    width: calc(100%);
+    width: 100%;
     background-color: #141922;
     overflow: auto;
     padding-left: 230px;
@@ -101,7 +101,7 @@ main .content {
 
 /* nav-top  */
 main .nav-top {
-    height: calc(100% - 90px);
+    height: calc(100% - 180px);
     overflow: hidden;
     min-height: 370px;
 }
